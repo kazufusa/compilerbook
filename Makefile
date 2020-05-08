@@ -1,4 +1,7 @@
-bash:
-	docker-compose run --rm compilerbook bash
+test:
+	docker-compose run --rm compilerbook make test
 
-.PHONY: bash
+clean:
+	cd 9cc && make clean
+
+.PHONY: test clean
