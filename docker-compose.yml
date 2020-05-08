@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  compilerbook:
+    # build: https://www.sigbus.info/compilerbook/Dockerfile
+    build: .
+    volumes:
+      - ./9cc:/home/user
+    environment:
+      TZ: Asia/Tokyo
